@@ -110,12 +110,12 @@ shape1$total_escravisados <- data_shape$Total
 # plotar grafico
 
 #Criando uma variável que reflita a ordem dos dados do menor para o maior logaritmo de longe
-brks <- seq(0,200000,by=1)
-brks2 <- seq(0,200000,by=20000)
+brks <- seq(0,200000,by=25000)
+brks2 <- seq(0,200000,by=10000)
 
 
 #Plotando o indicador (variável) no seu arquivo shape
-spplot(shape1,"total_escravisados", at=brks, col.regions=rev(brewer.pal(10,"Greens")), main="Total de escravisados por província - 1872", direction=-1)
+spplot(shape1,"total_escravisados", at=brks, col.regions=(brewer.pal(10,"Greens")), main="Total de escravisados por província - 1872", direction=-1)
 
 ```
 
